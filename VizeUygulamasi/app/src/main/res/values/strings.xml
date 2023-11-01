@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VizeUygulamasi</string>
+
+    <style name="AlertDialogCostom" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#F74C4A4A</item>
+    </style>
+</resources>

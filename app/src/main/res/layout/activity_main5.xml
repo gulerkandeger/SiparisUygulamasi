@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            app:srcCompat="@drawable/indir" />
+
+        <TextView
+            android:id="@+id/necorbasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="8dp"
+            android:textColor="#BF0F0F"
+            android:textSize="20dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tuzorani"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#736D6D"
+            android:textSize="20dp"
+            android:text="Tuz Oranı" />
+
+        <SeekBar
+            android:id="@+id/tuzbar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:max="2"
+            android:progress="0"
+            android:progressBackgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/aciorani"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#736D6D"
+            android:textSize="20dp"
+            android:text="Acı Oranı" />
+
+        <SeekBar
+            android:id="@+id/acibar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="2"
+            android:progress="0"
+            android:progressBackgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/istekler"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#BF0F0F"
+            android:textSize="20dp"
+            android:text="Lütfen İsteklerinizi İşaretleyiniz" />
+
+        <TableLayout
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent" >
+
+
+                <Switch
+                    android:id="@+id/sarimsak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:buttonTint="@color/white"
+                    android:buttonTintMode="add"
+                    android:foregroundTint="@color/black"
+                    android:text="Sarımsak "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/nane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nane  "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/dil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dil  "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent" >
+
+                <Switch
+                    android:id="@+id/terbiye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terbiye  "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/beyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beyin"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/sirke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sirke  "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent" >
+
+                <Switch
+                    android:id="@+id/krema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Krema"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/yag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/white"
+                    android:text="Yağ"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/kasar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kaşar"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent" >
+
+                <Switch
+                    android:id="@+id/kitir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kıtır"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/limon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Limon "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/tozbiber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toz Biber "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:trackTint="@color/white"
+                    android:visibility="invisible" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/ekstraistek"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#BF0F0F"
+            android:textSize="20dp"
+            android:text="Ekstra İsteklerinizi Yazabilirsiniz" />
+
+        <EditText
+            android:id="@+id/baskaarzu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:hint="Başka Bir Arzunuz?"
+            android:textColorHint="#554E4E"
+            android:backgroundTint="@color/white"
+            android:ems="30"
+            android:inputType=""
+            />
+
+        <Button
+            android:id="@+id/siparisver"
+            android:layout_width="115dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#D82828"
+            android:text="Sipariş Ver"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
